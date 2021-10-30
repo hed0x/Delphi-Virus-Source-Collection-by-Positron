@@ -1,9 +1,7 @@
 # Delphi Virus Source Collection by Positron
 
-------------------------------------------------------------------------------                                                        
-                       Delphi Virus/Worm source colletion
-                                 by Positron
-------------------------------------------------------------------------------
+> **redrum88's NOTE: This was downloaded from VxHeavens.**
+> Below follows the original README file
 
 This package include my Delphi virus/worm source collection.  Some of them are
 created by me, but most of them are come from other delphi coders. Many Delphi 
@@ -24,7 +22,7 @@ I stop Delphi coding, but it is not mean that i leave the vx-scene ...
 
 Email: positronvx@hotmail.com
 
-> NOTE: This was downloaded from VxHeavens.
+
 
 
 
