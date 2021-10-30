@@ -1,0 +1,186 @@
+<pre>
+About Denial RAT.
+
+Info :
+ Denial is a R.A.T. (Remote Administration Tool) wich allows you to take full control
+ over a other computer. Denial has multi-server ability wich means the client can connect
+ to more then one server. 
+
+Features :
+ Client Side :
+  o - Full regeditor, allows you to browse, change, delete keys and values.
+  o - Full filemanager, allows you to browse files, delete files and dirs, download and upload and excute.
+  o - Process viewer, allows you to list all running processes and also kill selected process.
+  o - Window viewer, allows you to show and hide any open window, and also change caption
+  o - Information, receive information about the server and the computer.
+  o - Bat scripter, create a batscript and run on remote computer.
+  o - Download Queue, see all files that are in progress, download and upload.
+  o - Registry scripter, create a script to receive spefecied regkeys
+  o - Config server, change server port, notifications, ircbot and password, also remove server.
+  o - Capture screen and webcam images with your choosed quality.
+  o - Traffic is all encrypted between client and server.
+
+ Editserv Side :
+  o - Choose between 3 startups, or none
+  o - Change traffic and transfer port
+  o - Choose between CGI and PHP notification, both or none.
+  o - Config a ircbot as notification to server your needs.
+  o - Set a password to prevent other people to config your server or connect to it
+
+Server Side :
+  o - All client features
+  o - Small size, about 45 kb compressed and about 112 kb uncompressed.
+  o - Total encryption, stores information
+
+How to create a server :
+ To create a server you first have to open "editserver.exe". When you have done that, press
+ "Read" button and point to the default "server.exe" file wich follows with Denial zip. The
+ editserver will then read all settings of "server.exe" and you are able to config it.
+
+ <img src="editserv.jpg">
+
+ ( This is how the editserver looks )
+ You are allowed to change wich ports the server should open and listen. As default 
+ the traffic port (commands) is 2864 and the transfer port (transfer files) is 2865. This
+ you are allowed to change to anything. Just make sure so transfer and traffic port aint same port.
+
+ After that you also see a "Startup" choice. This is where you choose how you want your server
+ to startup, if you want it else just select "none". The "System.ini" writes a line into "system.ini" at
+ windows 9x system, else it writes a shell startup at other systems. Same with the "Win.ini" except
+ that it writes a regedit startup on other systems then windows 9x. The regedit startup creates a key
+ under "HKEY_LOCAL_MACINE\Software\Microsoft\Windows\Run" with your choices.
+
+ <img src="notification.jpg">
+
+ If you switch tab to "Notifications" you see only two textfields. These are CGI and PHP script urls.
+ If you dont know how to use CGI or PHP as script then www.google.com and search for it, im sure
+ there is plenty of lessons how to do. Insert your url to the cgi or php if you have any, else just leave it
+ blank.
+
+ <img src="ircbot.jpg">
+
+ Switch to "iRC Bot" and its another notification-method. This is a bot for the chatprogram called
+ mIRC (www.mirc.com). You are aviable to choose server, bot nickname, channel to join and key for channel.
+ If you dont know how to use mirc, then goto mirc.com and there is explainations there. 
+ For you who know how to use ircbots, note that this bot does NOT idle in selected channel. It connects,
+ join channel, past message with ip and port and then quit to do same thing in 10 min.
+
+ <img src="password.jpg">
+
+ Switching to "Passwords" tab allows you to select a password for server. This password will be
+ encrypted inside the server, and noone else will be able to config the server without that password.
+ Also noone else can connect to the server without that password.
+
+
+"So now i have a server, and what do i do now?" you maybe ask.
+Well first, if you are a illegal trojaner that loves to crack computers, send the server to some victim, else if you are
+a legal network administrator, send over server to your servercomputer that you want to remote control.
+
+Once done that, lets go through all functions and how to use client.
+
+ <img src="Denial1.jpg">
+
+ This is the client where you controll your server. As you see there is two textboxes, one for ip and one for port.
+ In these textboxes you type the remote ip and remote port (the port you choosed in editserver). A ip and port
+ will be added to the list right under textboxes. If not the status says "Online" just be sure the checkbox is checked
+ and that the auto-refreshing is running. The status should soon say "Online" once the server is started. When it does
+ you are able to double-click the server-ip in list to open a new client window.
+ 
+ <img src="Denial2.jpg">
+
+ When first open this client window, a box will ask for password IF the server is passworded. Else you will start
+ in the "Manager" tab of client. Here you see filemanager, to control the filemanager you first have to get drives.
+ Press the "Get Drives" button and the list next to will be filled with all drives EXCEPT A:\. Denial server had a bug
+ wich made server crash if no disk was in A:\ and i couldnt get rid of it so i removed it for now. I gonna try to get it
+ work on other versions. But not many uses A:\ so its not that bit thing. Anyway, onces the list has been filled with
+ drivers, select a driver and press "Refresh". You will then automaticly download a file named "FILES.LST" from server
+ wich is encrypted. Client will automaticly decrypt this file and show it into the listview with name size and dir. Then just
+ select a file or dir, and press one of the buttons next to, example "Execute". You are also allowed to download and upload
+ files to the selected directory, or from the selected directory.
+
+ <img src="Denial3.jpg">
+
+ This is the regeditor wich allows you to browse the remote regedit. A tips is to resize the client window so you see all data
+ and values, else it might be a bit boring to work with it. All you have to do for browsing the remote regedit, is choose a regkey to start
+ with, example HKEY_LOCAL_MACHINE. Doubleclick that one, and you will automaticly download a file named "REGKEY.LST" and
+ "REGVAL.LST" wich contains the encrypted data for all keys and values under selected key. To remove a key select the key in the
+ left list (wich has items with a directory-icon) and press "Del Key". To delete a value, select a item in the right list (wich has a icon 
+ saying "AB") and press "Del Value". To set a value, select a item in left list and you will see that the itemname appears in one of the
+ textboxes. Set the text for the value into the right textbox, the one next to first textbox and press "Set Value". If you want to create a
+ new value, just type the new keyname into left textbox, and value into right textbox and press "Set Value". For you who doesnt know
+ what registry is in windows, DONT play with this becouse you will probelly just end up with fucking the computer up. 
+
+ <img src="Denial4.jpg">
+
+ This is the Process viewer. Here you dont have so much choices. Press the "Refresh" button to get all running processes on remote
+ computer, and select a process and press "Kill" to end it. Force end if not windows forbids it ;D
+
+ <img src="Denial5.jpg">
+
+ This is Windows viewer, here you can list all windows, only visibles for now, and hide/show them. Select a window, press hide or show
+ or type a caption and press "Chg Caption" . Chg stands för "Change".
+
+ <img src="Denial6.jpg">
+
+ This is where you capture screenshots and webcam-shots from remote computer. I havent got the function to work fully when it comes
+ to show the picture, so sometimes when you press "Single Pic" it will download picture, but not show it. If that happends, just press 
+ "Single Pic" again, and it should not happen. As you see you have 2 "checkboxes" where you choose if you want
+ webcam or screenshot. Under "Quality" you choose how high/low quality you want. You can choose between a
+ number between 1-9 where 1 is bad quality but fast transfer, and 9 is good quality and a bit slower transfer. 
+ "Save Pic" checkbox allows you to save all income pictures into a dir in same place as exe named "Images".
+ "Start" and "Stop" is for looped capturing :D
+
+ <img src="Denial7.jpg">
+
+ This is the transfer queue, here you see all uploads and downloads. You can cancel transfers if that would be needed.
+
+ <img src="Denial8.jpg">
+
+ Under information you are able to grab "own-scripted" reg values and server information. To
+ script your own reg-values script, goto "Registry Editor" wich is the tab next to.
+
+ <img src="Denial9.jpg">
+ 
+ Here is my so-called "Script Editor". I will following type a example of a script wich retreives
+ computer information for Windows 2k.
+ --- START OF SCRIPT ---
+ root[hkey_local_machine];
+ // This opens the registry root hkey_local_machine
+ key[software\microsoft\windows nt\currentversion];
+ // this opens the following key.
+
+ // this grabs the following values.
+ value[CurrentVersion];
+ value[RegisteredOwner];
+ --- END OF SCRIPT ---
+
+ To grab this info, go back to "Information" tab, and press "Grab info".
+
+ <img src="Denial10.jpg">
+
+ This is the Batch editor, wich allows you to create your own bat and send + execute.
+ Noting special with that.
+
+ <img src="Denial11.jpg">
+
+ This is where you change your server information. To read current settings
+ press the "Read Settings" button and it will popup. If you want to change anything,
+ just write the new settings and press "Save Settings" and it should be changed.
+
+ <img src="Denial12.jpg">
+
+ This is the ircbot section, where you can change and read ircbot settings.
+
+ <img src="Denial13.jpg">
+
+ Change password on server by typing in the current password, then a new one.
+
+ <img src="Denial14.jpg">
+
+ Change the CGI or PHP url if needed. Just put in and press "Set" button.
+
+ <img src="Denial15.jpg">
+
+ Remove, this removes the server from computer. Removes the exefile all startups and just dissapears.
+ Dont click this except you are sure you want to remove the server.
+</pre>

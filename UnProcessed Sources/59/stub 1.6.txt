@@ -1,0 +1,6 @@
+Stubbos Bot 1.6 is not finished.
+The ftp server is not finished.
+There is plenty of bugs in the source-code.
+Use at own risk.
+
+// p0ke

@@ -1,0 +1,44 @@
+Mental Rage Commandos
+
+10 - Version Number                        [X]           1
+11 - OS Type                               [X]           2
+12 - Cable Type                            [X]           3
+
+!-- INFO --!
+13 - Computer Info                         [X]           4
+14 - Server Info                           [X]           5
+15 - User Info                             [X]           6
+16 - Win/Sys Dir                           [X]           7
+17 - FileTransfer Port                     [X]           8
+18 - Comp uptime                           [X]           9
+
+!-- File Mang --!  // client view
+19 - Refresh                               [X]           10
+20 - Incomming File                        [X]           11
+21 - Outgoing File                         [X]           12
+22 - Delete                                [X]           13
+23 - Execute                               [X]           14
+
+!-- Reg Manager --!
+24 - Refresh                               [X]           15
+25 - Delete Key                            [X]           16
+26 - Delete Value                          [X]           17
+27 - Set Value                             [X]           18
+
+!-- Process --!
+29 - Update                                [X]           20
+30 - Close                                 [X]           21
+
+!-- Windows --!
+31 - Refresh                               [X]           22
+32 - Change Caption                        [ ]           23
+33 - Hide window                           [ ]           24
+34 - Show window                           [ ]           25
+35 - Disable window                        [ ]           26
+36 - Enable window                         [ ]           27
+
+!-- Transfers --!
+37 - Cancel Current                        [ ]           28
+
+!-- Find Files --!
+38 - Find File                             [ ]           29
