@@ -1,6 +1,6 @@
 # Delphi Virus Source Collection by Positron
 
-> **redrum88's NOTE: This was downloaded from VxHeavens.**
+> **0x48h's NOTE: This was downloaded from VxHeavens long time ago.**
 
 > Below follows the original README file
 
